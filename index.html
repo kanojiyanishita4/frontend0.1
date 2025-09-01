@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="C:\Users\Praveen\OneDrive\Desktop\nishitafrontend\images\logo.jpg">
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <ul id="menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>AI/ML & Data Analytic </p>
+                <h1>Hi , I'm <span>Nishita Kanojiya </span><br>
+                    From Indore Institute Of Science and Technology ,Indore </h1>
+            </div>
+        </div>
+    </div>
+    <!----------------------- about------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-colm-1">
+                    <img src="C:\Users\Praveen\OneDrive\Desktop\nishitafrontend\images\1.jpg">
+                </div>
+                <div class="about-colm-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="para">Hi, I’m a B.Tech Artificial Intelligence and Machine Learning student with a passion for solving real-world problems using data and AI. I am building strong foundations in Data Analytics, Machine Learning, Deep Learning, and Software Development, while also working on projects that combine analysis, visualization, and intelligent systems. My long-term goal is to become an AI/ML expert and secure a high-paying role in a reputed company. I’m also preparing for GATE to keep the option of pursuing a PhD in AI/ML open.</p>
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="OpenTab('skills')">Skills</p>
+                        <p class="tab-link" onclick="OpenTab('experience')">Experience</p>
+                        <p class="tab-link" onclick="OpenTab('education')">Education</p>
+                    </div>
+                    <div id="skills" class="tab-content active-tab">
+                        <ul>
+                            <li>
+                                <span>Programming Language </span> <br> Python,Java,C,C++
+                            <li>
+                                <span>AI/ML Tools </span> <br>Numpy,Mathplot,Pandas,Seaborn 
+                            </li>
+                            <li>
+                                <span>Web Development</span> <br> Html,Css,Js
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="experience" class="tab-content ">
+                        <ul>
+                            <li>
+                                <span>Python-based data analysis and visualization projects</span> <br> freeCodeCamp certification projects
+                            </li>
+                            <li>
+                                <span>Built a Pet Shop Management System</span> <br> using Java + SQL to understand database-driven application development.
+                            </li>
+                            <li>
+                                <span>Movie Analytics Platform</span> <br> ocusing on data visualization and analysis techniques.
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="education" class="tab-content">
+                        <ul>
+                            <li>
+                                <span>Bachelor of Technology </span> <br> RGPV 2023-2027
+                            </li>
+                            <li>
+                                <span>Higher Secondary Education</span> <br> ST.MARY'S H.SEC.SCHOOL,MHOW -2021-2023
+                            </li>
+                            <li>
+                                <span>High School</span> <br> ST.MARY'S H.SEC.SCHOOL,MHOW -2019-2020
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------services-------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Data Analytics</h1>
+                    <p>I explore datasets to uncover insights, patterns, and trends using tools like Pandas, NumPy, and Matplotlib. My focus is on data cleaning, analysis, and visualization, creating clear and meaningful reports that support decision-making and problem-solving.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h1>Machine Learning & AI</h1>
+                    <p>I’m building skills in machine learning algorithms, supervised and unsupervised learning, and applying them to real-world datasets. My projects include predictive modeling, time series analysis, and visualization, aiming to create AI solutions that are practical, accurate, and impactful.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h1>Software & Web Development</h1>
+                    <p>I work with Java + SQL for backend systems and HTML, CSS, and JavaScript for web interfaces. I’ve developed applications like a Pet Shop Management System and am expanding into frontend + full-stack skills to bring my AI/ML models into real-world applications
+                    </p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------portfolio---------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="my-work">
+                <div class="work">
+                    <img src="C:\Users\Praveen\OneDrive\Desktop\nishitafrontend\images\p1.jpg">
+                    <div class="layer">
+                        <h3>QR CODE GENRATOR </h3>
+                        <p>Developed a responsive web-based QR Code Generator using HTML, CSS, and JavaScript</p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\Praveen\OneDrive\Desktop\nishitafrontend\images\p2.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to talented people around the world. Download it from play store.</p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="C:\Users\Praveen\OneDrive\Desktop\nishitafrontend\images\p3.jpg">
+                    <div class="layer">
+                        <h3>Online Shoping App</h3>
+                        <p>The app connects you to talented people around the world. Download it from play store.</p>
+                        <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ----------------------------------contect me------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>indoreinstitute@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i>8770266294</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="C:\Users\Praveen\OneDrive\Desktop\nishitafrontend\resume.pdf" download class="btn btn1">Dowonload CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter Message" required></textarea>
+                        <button type="submit" class="btn btn1 btn2">Submit</button>
+                        <p class="msg"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © helloworld made with <i class="fa-solid fa-heart"></i> IIST</p>
+        </div>
+    </div>
+    <script>
+        let tablinks = document.querySelectorAll(".tab-link");
+        let tabContents = document.querySelectorAll(".tab-content");
+
+        function OpenTab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyxpp-7AM6_HDok53sA7tdsH--czt4ixUWolno5LewwwGf32wBscCPWXMtMklvBnmY/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.querySelector(".msg");
+        form.addEventListener('submit', e => {
+
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerText = "message sent successfully";
+
+                    setTimeout(() => {
+                        msg.innerText = "";
+                    }, 3000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <script>
+        let menu = document.querySelector("#menu");
+        function openmenu() {
+            menu.style.width = "150px";
+        }
+        function closemenu() {
+            menu.style.width = "0px";
+        }
+    </script>
+</body>
+
+</html>
